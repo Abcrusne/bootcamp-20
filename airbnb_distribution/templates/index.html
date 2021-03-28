@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <link href="/static/favicon.ico" rel="icon">
+     <link href="/static/styles.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Airbnb</title>
+</head>
+<body>
+    <div class = "place">
+        <h2 class= "stay"> Find a place to stay.</h2>
+        <form class="destination">
+            <div class="dest">
+                <p> Rent nightly from real people 840 <i>cities</i> in 73 <i>countries.</i></p>
+                <input autocomplete="off" autofocus class="form-control" name="location" placeholder="Where are you going?" type="text">
+            </div>
+            <div class="dest">
+                <p>Check in</p>
+                <input class="form-control" name="check_in" type="date">
+            </div>
+             <div class="dest">
+                 <p>Check out</p>
+                <input class="form-control" name="check_out" type="date">
+            </div>
+            <div class = "dest">
+                <p> Number of adults</p>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+            </div>
+            <div class = "dest">
+                <p> Number of children (0-12 years old)</p>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+            </div>
+            <button class="find" type="submit">Find</button>
+        </form>
+    </div>
+    <div class = "header">
+    <hr>
+         <div><h1 class = "airbnb">Airbed & Breakfast - find a place to stay. Hello {{session.username}}!</h1>
+     </div>
+    <div class = "sign">
+        <ul>
+            <li> <a href ="/login">Login</a> </li>
+            <li> <a href ="/register">Register</a></li>
+        </ul>
+    </div>
+    {% if get_flashed_messages () %}
+    <header>
+        <div class = "alert" role = "alert">
+        {{ get_flashed_messages () | join (" ")}}
+        </div>
+    </header>
+    {% endif %}
+    </div>
+    <div class="image">
+    <div class = "Greg">
+        <h2 class = "name"> Frances and Greg, Los Angeles</h2>
+        <p> Recently reviewed</p>
+        <img src="/static/img/1.jpg" alt="Frances and Greg">
+    </div>
+    <div class = "Washington">
+        <h2 class = "name"> Washington, DC</h2>
+        <p> From 10$/night</p>
+        <img src="/static/img/2.jpg" alt="Washington, DC">
+    </div>
+    <div class = "Paris">
+        <h2 class = "name"> Paris, France</h2>
+        <p> Rooms from 20$/night</p>
+        <img src="/static/img/3.jpg" alt="Paris, France">
+    </div>
+    <div class = "Amsterdam">
+        <h2 class = "name"> Amsterdam, Netherlands</h2>
+        <p> 85$/night <br> 1 Review</p>
+        <img src="/static/img/capturen.jpg" alt="Amsterdam">
+        <img src="/static/img/pic.jpg" alt="Amsterdam">
+         <img src="/static/img/stop.jpg" alt="Amsterdam">
+
+    </div>
+
+    </div>
+    <div class = "seen">
+        <h3> As seen on:</h3>
+        <ul class ="size">
+            <li> <img src="/static/img/cnn.jpg" alt="" width="100" height="80"></li>
+            <li> <img src="/static/img/nbc.jpg" alt="" width="100" height="80"></li>
+            <li> <img src="/static/img/news.jpg" alt="" width="120" height="50"></li>
+            <li> <img src="/static/img/wall.jpg" alt="" width="150" height="50"></li>
+            <li> <img src="/static/img/tech.jpg" alt="" width="150" height="50"></li>
+            <li> <img src="/static/img/the.png" alt="" width="150" height="50"></li>
+        </ul>
+
+    </div>
+    <div class= "everything">
+        <section class = "about">
+            <h4> About</h4>
+            <ul class = "abc">
+                <li class = "a">
+                    <a href="#"> How Airbnb works</a>
+                </li>
+                <li class = "a">
+                    <a href="#"> Trust and Safety</a>
+                </li>
+                <li class = "a">
+                    <a href="#"> Contacts </a>
+                </li>
+            </ul>
+        </section>
+        <section class = "support">
+            <h4> Support</h4>
+            <ul class = "abc">
+                <li class = "a">
+                    <a href="#"> Terms and Privacy</a>
+                </li>
+                <li class = "a">
+                    <a href="#"> Help Center</a>
+                </li>
+                <li class = "a">
+                    <a href="#"> Cancellation options </a>
+                </li>
+            </ul>
+        </section>
+        <section class = "host">
+            <h4> Host</h4>
+            <ul class = "abc">
+                <li class = "a">
+                    <a href="#"> Host your home</a>
+                </li>
+                <li class = "a">
+                    <a href="#"> Responsible Hosting</a>
+                </li>
+                <li class = "a">
+                    <a href="#">Invite Friends </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div>
+        <h5> &#169; Airbed &Breakfast, Inc. </h5>
+    </div>
+    <div>
+        <p>
+            Join us:
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+</p>
+    </div>
+</body>
+</html>

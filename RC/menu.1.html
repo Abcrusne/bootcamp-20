@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block main %}
+    <form action="/menu" method="post">
+        <!--<div class="form-group">-->
+        <!--    <input class="" name="meal" placeholder="Meal" type="text" required>-->
+        <!--</div>-->
+        <div class="menubox">
+                <label for="meniu"><h1>"meal"</h1></label>
+                {% for meal in meals %}
+                     {% endfor%}
+            </select>
+        </div>
+        <div class="form-group">
+            <input class="" name="amount" placeholder="Amount" type="number" min="1">
+        </div>
+        <button class="" type="submit">Order</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,2 @@
+Money you own after buying 1 kiwi, 1 pomegranate and 1 avocado:  5
+How many avocados you can buy: 5

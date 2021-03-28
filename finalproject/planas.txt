@@ -1,0 +1,9 @@
+menu.html - html file'as kuriame user'is gali pasirinkti ka ir kiek uzsisakyti (pradzia menu pradejau, bet jei nori kazkaip kitaip daryti, tai drasiai keisk:))
+application.py route /menu kur suskaiciuotu price uz uzsisakyta maista ir jo kieki
+(sitas veliau/nebutinai) application.py route /history kad registruotas user'is mato kokius uzsakymus buvo atlikes
+i db itraukti nauja lentele menu kur ieitu maistas, ju kainos
+style'as  +
+dar galetume imituoti "pirkima kortele" kaip turejome uzduoti credit, kur user'is iveda korteles numeri ir musu algoritmas patikrina ar tai legali kortele.
+Peieskoti paveiksliuku web'ui  +
+dar galima prideti News skilti pradiniame puslapyje +
+kai neteisingai suvedamas username/password apology grazesni padaryti, nes dabar paprastas
